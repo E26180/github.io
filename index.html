@@ -1,19 +1,328 @@
-xml
-<section id="production-diary">
-  <h2>Production diary – Week 15</h2>
-  <p><strong>Date:</strong> 10 February 2026</p>
-  <p>
-    This week I worked on my GitHub Pages portfolio website. I focused on
-    creating or improving the main sections (About, Projects, Skills, Contact)
-    and setting up my CS Maths & Tools page.
-  </p>
-  <p>
-    I am most happy with...
-  </p>
-  <p>
-    I found it difficult to...
-  </p>
-  <p>
-    Next time I want to improve...
-  </p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmet Ege Baykoz | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    section {
+      max-width: 950px;
+      margin: 35px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      border-left: 6px solid #111;
+      padding-left: 12px;
+      font-size: 1.8rem;
+    }
+
+    .card {
+      background: #f8f8f8;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 18px 0;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    ul {
+      line-height: 2;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    /* Calculator */
+    .calculator {
+      background: #222;
+      color: white;
+      max-width: 350px;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .calculator input {
+      width: 90%;
+      padding: 12px;
+      font-size: 1.3rem;
+      text-align: right;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .calculator button {
+      width: 70px;
+      height: 60px;
+      margin: 6px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .calculator button:hover {
+      background: gold;
+      color: black;
+    }
+
+    /* RS6 Image */
+    .rs6-img {
+      width: 100%;
+      border-radius: 18px;
+      margin-top: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Ahmet Ege Baykoz</h1>
+    <p>Computer Science Student | GitHub Pages Portfolio</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#maths">Maths Tool</a>
+      <a href="#rs6">Audi RS6</a>
+      <a href="#diary">Diary</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <strong>Ahmet Ege Baykoz</strong>. I am a Computer Science student
+      learning web development, programming, and computer science maths concepts.
+      This portfolio website is a space where I record my progress and show the
+      projects I create during my studies.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>
+        I created this portfolio using HTML, CSS, and GitHub Pages. It includes
+        multiple sections and interactive features.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Maths Calculator Tool</h3>
+      <p>
+        I built a simple calculator using JavaScript to practise interactive web tools.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Audi RS6 Page Section</h3>
+      <p>
+        I added a section about the Audi RS6 to practise designing a themed page layout.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML structure and semantic sections</li>
+      <li>CSS modern layout and design</li>
+      <li>GitHub Pages publishing</li>
+      <li>JavaScript basics (calculator tool)</li>
+      <li>Computer Science Maths: Binary and number systems</li>
+    </ul>
+  </section>
+
+  <!-- MATHS TOOL -->
+  <section id="maths">
+    <h2>CS Maths Tool – Calculator</h2>
+    <p>
+      This is a simple interactive calculator tool written in JavaScript.
+    </p>
+
+    <div class="calculator">
+      <input type="text" id="display" disabled>
+
+      <br>
+      <button onclick="add('7')">7</button>
+      <button onclick="add('8')">8</button>
+      <button onclick="add('9')">9</button>
+      <button onclick="add('/')">÷</button>
+
+      <br>
+      <button onclick="add('4')">4</button>
+      <button onclick="add('5')">5</button>
+      <button onclick="add('6')">6</button>
+      <button onclick="add('*')">×</button>
+
+      <br>
+      <button onclick="add('1')">1</button>
+      <button onclick="add('2')">2</button>
+      <button onclick="add('3')">3</button>
+      <button onclick="add('-')">−</button>
+
+      <br>
+      <button onclick="add('0')">0</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="add('+')">+</button>
+    </div>
+  </section>
+
+  <!-- AUDI RS6 -->
+  <section id="rs6">
+    <h2>Audi RS6 Section</h2>
+    <p>
+      The Audi RS6 is one of the most iconic high-performance estate cars.
+      It combines luxury, speed, and practicality in one design.
+    </p>
+
+    <p>
+      <strong>Engine:</strong> 4.0L V8 Twin Turbo <br>
+      <strong>Power:</strong> Around 600 horsepower <br>
+      <strong>0–60 mph:</strong> Approximately 3.5 seconds
+    </p>
+
+    <img class="rs6-img"
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Audi_RS6_C8_IMG_3661.jpg"
+      alt="Audi RS6">
+  </section>
+
+  <!-- PRODUCTION DIARY -->
+  <section id="diary">
+    <h2>Production Diary – Week 15</h2>
+    <p><strong>Date:</strong> 10 February 2026</p>
+
+    <p>
+      This week I worked on improving my GitHub Pages portfolio website. I focused on
+      building a clear structure with the main sections such as About, Projects, Skills,
+      and Contact. I also wanted the website to look more modern by using CSS styling,
+      cards, and a navigation menu.
+    </p>
+
+    <p>
+      The main change I made was adding interactive and creative elements. For example,
+      I created a simple calculator tool using JavaScript, which helped me practise
+      combining HTML, CSS, and programming logic.
+    </p>
+
+    <p>
+      The achievement I am most proud of is successfully publishing a complete portfolio
+      website online through GitHub Pages. Seeing my work live on the internet made me
+      feel more confident.
+    </p>
+
+    <p>
+      The most challenging part was understanding how to organise the HTML layout and
+      making sure GitHub updates were working correctly. I also learned that small
+      mistakes in code can stop features from working.
+    </p>
+
+    <p>
+      From this work, I learned more about web development structure, navigation links,
+      and how JavaScript can add interactive maths tools. Next week, I want to add more
+      projects and create another CS maths tool such as a binary converter.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+    <p>GitHub: https://github.com/yourusername</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Ahmet Ege Baykoz Portfolio</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function add(value) {
+      document.getElementById("display").value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+
+    function calculate() {
+      let expression = document.getElementById("display").value;
+      document.getElementById("display").value = eval(expression);
+    }
+  </script>
+
+</body>
+</html>
